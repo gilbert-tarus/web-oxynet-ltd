@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary meta tags -->
+    <title>Oxynet -  IT solutions & Service </title>
+    <meta name="title" content="Oxynet -  IT solutions & Service">
+    <meta name="description" content="This is an IT Solutions & Internet Service Provider Website created by Tarus Gilbert">
+    <!-- fivicon -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <!-- goole fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
+    rel="stylesheet">
+    <!-- Material Icon font -->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0" />
+    <!-- Custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- preload images -->
+    <link rel="preload" as="image" href="./assets/images/logo-no-bg.png">
+    <link rel="preload" as="image" href="./assets/images/hero-bg-fiber-cables-3.png">
+    <style>
+        
+        /* Breadcrumb Styles */
+        .breadcrumb {
+            padding: 10px 20px;
+            background-color: #f9f9f9;
+            margin-bottom: 2px;
+            margin-top: 40px;
+        }
+        
+        .breadcrumb a {
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .breadcrumb span {
+            font-weight: bold;
+            display: inline;
+        }
+        
+        /* Section Styles */
+        main section {
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        #contact {
+            background-color: #f9f9f9;
+        }
+        
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            /* background-color: aquamarine; */
+        }
+        @media (min-width: 1200px) {
+            .header {
+                padding-block: 10px;
+            }
+        }
+        
+        .contact-det{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            /* background-color: aqua; */
+            margin: 2px auto;
+            gap: 20px;
+        }
+        .contact-det .call *, .contact-det .email  p *{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <a href="#">
+                <img src="./assets/images/logo.png" width="85" height="67" alt="oxynet home">
+            </a>
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li><a href="index.html#hero" class="navbar-link">Home</a></li>
+                    <li><a href="index.html#about" class="navbar-link">About</a></li>
+                    <li><a href="index.html#service" class="navbar-link">Services</a></li>
+                    <li><a href="index.html#work" class="navbar-link">Projects</a></li>
+                    <li><a href="index.html#contact" class="navbar-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-primary">
+                <span class="span">Get Info</span>
+                <span class="material-symbols-rounded">arrow_forward</span>
+            </a>
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                <span class="nav-toggle-icon icon-1"></span>
+                <span class="nav-toggle-icon icon-2"></span>
+                <span class="nav-toggle-icon icon-3"></span>
+            </button>
+        </div>
+    </header>
+    <br><br>
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> > <span>Contact Us</span>
+    </div>
+    
+    <!-- MAIN -->
+    <main>
+        <article>
+            <!-- Contact Us Section -->
+            <section id="contact">
+                
+                <h2 class="h2">Contact Us</h2>
+                <div class="contact-det">
+                    <div class="call">
+                        <!-- <h3 style="text-align: left; margin-bottom: 8px;"></h3> -->
+                        <p>
+                            <span style="font-weight: 700;">Call Us:</span>
+                        <span><a href="tel:">
+                                <span class="material-symbols-rounded">call</span>
+                                <span class="span">+254 721 851774</span> 
+                            </a></span>/
+                            <span>
+                            <a href="tel:">
+                                &nbsp;&nbsp;&nbsp;&nbsp; <span class="span">+254 721 255335</span>
+                            </a>
+                        </span>
+                        </p>
+                    </div>
+                    <div class="email">
+                        <!-- <h3 style="text-align: left; margin-bottom: 8px;"> </h3> -->
+                        <p>
+                            <span style="font-weight: 700;">Send Us an Email:</span>
+                            <a href="mailto:oxynet@gmail.com">
+                                &nbsp;&nbsp;&nbsp;&nbsp; <span class="material-symbols-rounded">mail</span>
+                                <span class="span">oxynet@gmail.com</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <p class="p" style="font-weight: 600;">Feel free to reach out to us through this form.</p>
+                <form action="/submit-contact" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn" id="form-submit-btn">Submit</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="footer-top section">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.png" width="85" height="67" alt="oxynet home">
+                    </a>
+                    <p class="footer-text">
+                        Delivering cost-effective optical fiber installation and structured cabling services.
+                    </p>
+                    <ul class="social-list">
+                        <li>
+                            <a href="#" class="social-link">
+                                <img src="./assets/images/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <img src="./assets/images/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <img src="./assets/images/twitter.svg" alt="twitter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <ul class="footer-list">
+                    <li>
+                        <p class="h3">Opening Hours</p>
+                    </li>
+                    <li>
+                        <p class="p">Monday – Friday</p>
+                        <span class="span">0800hrs – 1800hrs</span>
+                    </li>
+                    <li>
+                        <p class="p">Saturday</p>
+                        <span class="span"> 0900hrs – 1400hrs </span>
+                    </li>
+                    <li>
+                        <p class="p">Sunday</p>
+                        <span class="span">1000hrs – 1400hrs </span>
+                    </li>
+                </ul>
+                
+                <ul class="footer-list">
+                    <li>
+                        <p class="h3">Contact Info</p>
+                    </li>
+                    <li>
+                        <a href="tel:" class="footer-link">
+                            <span class="material-symbols-rounded">call</span>
+                            <span class="span">+254 721 851774</span> 
+                        </a>
+                        <a href="tel:" class="footer-link">
+                            &nbsp;&nbsp;&nbsp;&nbsp; <span class="span">+254 721 255335</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:oxynet@gmail.com" class="footer-link">
+                            <span class="material-symbols-rounded">mail</span>
+                            <span class="span">oxynet@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <address class="footer-link address">
+                            <span class="material-symbols-rounded">location_on</span>
+                            <span class="span">Office Location</span>
+                        </address>
+                    </li>
+                </ul>
+            </div>
+            
+            <img src="./assets/images/footer-shape-3.png" width="637" height="173" loading="lazy"  alt="Shape" class="shape shape-3 move-anim-2" style="opacity: 0.5;">
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">Copyright 2024, Tarus Gilbert. All Rights Reserved.</p>
+                <img src="./assets/images/world-spin-removebg-preview.png" width="805" height="652" loading="lazy" alt="World Spin" class="shape shape-1 move-anim">
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Custom js link -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

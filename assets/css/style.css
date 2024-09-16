@@ -777,13 +777,15 @@ margin-top: 2rem;
 }
 
 .back{
-  background-color: var(--oxford-blue-2);
-  width: max-content;
-  padding: 10px;
+  background-color: var(--oxford-blue-3);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  align-items: center;
   border-radius: 50%;
   color: white;
-  font-size: 120%;
-  font-weight: 700;
+  font-size: 150%;
+  font-weight: 800;
   position: fixed;
   bottom: 2.5%;
   left: 85%;
@@ -951,7 +953,10 @@ margin-top: 2rem;
     bottom: -30px;
     right: 0;
   }
-  
+  .back{
+    left: 90%;
+    bottom: 2.5%;
+  }
   
 }
 
@@ -1023,6 +1028,11 @@ margin-top: 2rem;
   
   .footer-top .container { grid-template-columns: 1fr 0.9fr 0.9fr;}
   .copyright { --fs-6: 1.4rem; }
+
+  .back{
+    left: 92.5%;
+    bottom: 1.5%;
+  }
   
 }
 
@@ -1200,13 +1210,13 @@ margin-top: 2rem;
   .has-scrollbar { overflow-x: visible;}
   
   .scrollbar-item { min-width: calc(33.33% - 20px);}
+
+  .back{
+    left: 94.5%;
+    bottom: 0.5%;
+  }
   
 }
-
-
-
-
-
 
 
 /* Responsive for large than 1200px screen*/
@@ -1354,6 +1364,11 @@ margin-top: 2rem;
   .footer .shape-1{ left:  -50px; }
   
   .footer .shape-2 { left: -50px;}
+
+  .back{
+    left: 96%;
+    bottom: 2.5%;
+  }
   
 }
 

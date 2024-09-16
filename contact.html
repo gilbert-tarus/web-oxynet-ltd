@@ -77,23 +77,53 @@
             border-radius: 5px;
             /* background-color: aquamarine; */
         }
+        
         @media (min-width: 1200px) {
             .header {
                 padding-block: 10px;
             }
         }
         
-        .contact-det{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 90%;
-            /* background-color: aqua; */
-            margin: 2px auto;
-            gap: 20px;
+        .contact-list{
+            /* background-color: var(--international-orange-engineering); */
+            /* color: var(--white); */
+            text-align: left;
+            font-size: 16px;
+            margin-top: 10px;
+            display: grid;
+            gap: 1px;
+            padding: 10px;
+            justify-items: center;
+            align-items:baseline;
         }
-        .contact-det .call *, .contact-det .email  p *{
-            display: inline;
+        .contact-item{
+            /* background-color: var(--oxford-blue-2); */
+            padding:  10px 50px;
+            transition: var(--transition);
+            max-width:max-content;
+        }
+        
+        .contact-item:hover{
+            background-color: var(--international-orange-engineering);
+            transform: translateY(-2px);
+        }
+        
+        .contact-item .strong{
+            display: block;
+            line-height: 1.1;
+        }
+        .call, .email{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        @media (min-width: 1200px) {
+            .contact-list{
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
         }
     </style>
 </head>
@@ -134,36 +164,35 @@
     <main>
         <article>
             <!-- Contact Us Section -->
-            <section id="contact">
+            <section id="contact" class="contact">
                 
                 <h2 class="h2">Contact Us</h2>
-                <div class="contact-det">
-                    <div class="call">
-                        <!-- <h3 style="text-align: left; margin-bottom: 8px;"></h3> -->
-                        <p>
-                            <span style="font-weight: 700;">Call Us:</span>
-                        <span><a href="tel:">
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <strong class="strong">Call Us:</strong>
+                        <div class="call">
+                            <div>
                                 <span class="material-symbols-rounded">call</span>
-                                <span class="span">+254 721 851774</span> 
-                            </a></span>/
-                            <span>
-                            <a href="tel:">
-                                &nbsp;&nbsp;&nbsp;&nbsp; <span class="span">+254 721 255335</span>
-                            </a>
-                        </span>
-                        </p>
-                    </div>
-                    <div class="email">
-                        <!-- <h3 style="text-align: left; margin-bottom: 8px;"> </h3> -->
-                        <p>
-                            <span style="font-weight: 700;">Send Us an Email:</span>
-                            <a href="mailto:oxynet@gmail.com">
-                                &nbsp;&nbsp;&nbsp;&nbsp; <span class="material-symbols-rounded">mail</span>
-                                <span class="span">oxynet@gmail.com</span>
-                            </a>
-                        </p>
-                    </div>
-                </div>
+                            </div>
+                            <div>
+                                <a href="tel:"><span class="span">+254 721 851774</span></a>
+                                <a href="tel:"><span class="span">+254 721 255335</span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <strong class="strong">Send Us an Email:</strong>
+                        <div class="email">
+                            <div>
+                                <span class="material-symbols-rounded">mail</span>
+                            </div>
+                            <div>
+                                <a href="mailto:oxynet@gmail.com"><span class="span">oxynet@gmail.com</span></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
                 <br>
                 <p class="p" style="font-weight: 600;">Feel free to reach out to us through this form.</p>
                 <form action="/submit-contact" method="POST">

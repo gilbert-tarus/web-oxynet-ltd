@@ -336,6 +336,18 @@ body{
   background-color: var(--space-cadet);
 }
 
+.header::after{
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 15px;
+  padding-inline-start: 10px;
+  z-index: 4;
+  background-color: var(--space-cadet); */
+}
+
+
 .header .container{
   display: flex;
   justify-content: space-between;
@@ -692,13 +704,17 @@ body {
 
 
 .services-card .card-icon{
-  max-width: max-content;
+  width: 350px;
+  height: 200px;
+  /* max-width: max-content; */
   margin-inline: auto;
   margin-block-end: 4px;
 }
 
 .services-card .card-icon img{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* .services-card button:hover {

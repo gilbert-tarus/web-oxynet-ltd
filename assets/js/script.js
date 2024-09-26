@@ -13,19 +13,6 @@ navToggler.addEventListener("click", function(){
 })
 
 
-// Read More Link
-
-// document.querySelector('.read-more').addEventListener('click', function (e) {
-//     e.preventDefault(); // Prevent the default link behavior
-//     var moerText = document.querySelector('.more-text');
-//     if(moerText.style.display === 'none' || moerText.style.display === ''){
-//       moerText.style.display = 'inline';
-//       this.textContent = 'Read Less'; // Change to 'Read Less'
-//     }else{
-//       moerText.style.display = 'none';
-//       this.textContent = 'Read More'; // Change text back to "Read More"
-//     }
-//   })
 
 document.querySelectorAll('.read-more').forEach(function(readMoreLink){
   readMoreLink.addEventListener('click', function (e) {

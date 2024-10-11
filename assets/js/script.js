@@ -1,5 +1,23 @@
 "use strict";
 
+// Sticky navigation when scrolling
+
+window.onscroll = function (){
+  stickyNav();
+}
+
+var nav = document.getElementById("header");
+var sticky = nav.offsetTop;
+
+function stickyNav() {
+  if (window.scrollY > sticky) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
+
+
 /*
 * Mobile navbar toggle
 */ 
@@ -92,3 +110,5 @@ carouselContainer.addEventListener('mouseenter', () => {
 carouselContainer.addEventListener('mouseleave', () => {
   slideTimer = setInterval(nextSlide, autoSlideInterval);
 });
+
+
